@@ -1,0 +1,27 @@
+//Lab 6 for CS2003: Jaime Nunez
+
+namespace Lab6.shoppingSystem;
+
+class Customer {
+  customerName;
+  int customerAge;
+  customerGender;
+  double customerSize;
+
+  }
+
+class Account {
+    String accountID;
+	String accountName;
+	String password;
+	String createdDate;
+  1 -- * Order;
+  * -- 1 Customer;
+}
+
+class Order{
+    String orderDate;
+	int orderCost;
+	int shippingCost;
+	int itemCost;
+}
